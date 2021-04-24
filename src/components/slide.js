@@ -8,8 +8,8 @@ import pic4 from '../images/pic4.jpg';
 export default function Slide() {
     return (
       <div style={{marginTop:"6em",
-                   padding: "10px",
-                   backgroundColor: "#e5ebe9"
+                   padding: "10px"
+                   
        }}>
         <h4 style={{textAlign:"center",
                    fontFamily: "Kanit, sans-serif",
