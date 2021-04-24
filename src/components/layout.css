@@ -1,0 +1,230 @@
+html {
+  margin: 0 auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-position: center; */
+  background-color: rgba(249, 245, 250, 0.993);
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.navInfo {
+  margin: 0 auto;
+  /* padding-top: 1.2em; */
+  font-weight: bold;
+  color: black;
+}
+.navList {
+  padding-bottom: 5px;
+  list-style-type: none;
+}
+
+.navList:hover {
+  color: #a10519;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  cursor: crosshair;
+  color: black;
+  text-decoration: none;
+  transition: 1s;
+}
+
+a:hover {
+  cursor: crosshair;
+  color: #a10519;
+  text-decoration: none;
+}
+
+.stickyNav {
+  position: -webkit-sticky;
+  position: sticky;
+  /* top: 0; */
+}
+
+.main {
+  margin: 0 auto;
+  background-image: url(../images/main.jpg);
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-title {
+  color: #003d25;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 10vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #000;
+  top: 0;
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: black;
+}
+
+.wrapper {
+  padding-top: 5em;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 9vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+h4:hover {
+  cursor: crosshair;
+  color: #a10519;
+  text-shadow: 2px 1px #a10519;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(25), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 3em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.about {
+  background-color: rgb(245, 220, 235);
+}
+
+.aboutBox {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 5em;
+  background-image: url(../images/beHappy.jpg);
+  background-size: cover;
+  height: 700px;
+  width: 80%;
+}
+.aboutInfo {
+  margin: 7em 0 0 8em;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #003d25;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.border {
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 10em;
+  }
+}
