@@ -5,7 +5,7 @@ html {
   /* background-image: url(../images/background.jpg);
   background-size: cover;
   background-position: center; */
-  background-color: rgba(249, 245, 250, 0.993);
+  background-color: #e5ebe9;
 }
 ::-webkit-scrollbar {
   width: 0px;
